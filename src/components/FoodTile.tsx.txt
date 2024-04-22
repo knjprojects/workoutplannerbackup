@@ -1,0 +1,17 @@
+import React from 'react'
+
+type Props = {}
+import FoodCard from './FoodCard'
+const FoodTile = ({foodid,description,cost, image,fat, protein, calories,carbs,ingredients}:{foodid:number,description:string,cost:number,image:string,fat:number, protein:number,carbs:number,calories:number,ingredients:string}) => {
+    const addMeal=(foodid:number,userid:number)=>{
+        
+    }
+  return (
+    <div className="flex flex-col ">
+        <FoodCard foodid={foodid} />
+        <button onClick={()=>addMeal(foodid,userid)}>SAdd to Meals</button>
+    </div>
+  )
+}
+
+export default FoodTile
